@@ -1,0 +1,226 @@
+# ============================================================
+# RAG APPLICATION - PYTHON DEPENDENCIES
+# ============================================================
+# Python: 3.11+
+# Architecture:
+# Documents -> Loaders -> Parsing/Chunking -> Embeddings
+# -> Vector DB (ChromaDB) -> Retriever
+# -> Reranker -> LLM -> Response
+# LLM Providers:
+# - Google Gemini
+# - xAI Grok
+# - Mistral / Mixtral
+# ============================================================
+
+# ------------------------------------------------------------
+# 1. CORE RAG / LLM FRAMEWORK
+# ------------------------------------------------------------
+langchain
+langchain-core
+langchain-community
+langchain-text-splitters
+langchain-chroma
+
+# Optional LangGraph for multi-step / agentic RAG workflows
+langgraph
+
+# ------------------------------------------------------------
+# 2. CHROMADB - VECTOR DATABASE
+# ------------------------------------------------------------
+chromadb
+
+# ------------------------------------------------------------
+# 3. EMBEDDINGS & RERANKING
+# ------------------------------------------------------------
+# Google embeddings
+langchain-google-genai
+
+# Hugging Face / Sentence Transformers embeddings & reranking
+sentence-transformers
+transformers
+
+# PyTorch backend
+torch
+
+# ------------------------------------------------------------
+# 4. LLM PROVIDERS
+# ------------------------------------------------------------
+# Google Gemini / Google AI
+google-generativeai
+
+# xAI Grok (OpenAI-compatible API)
+openai
+
+# Mistral / Mixtral
+mistralai
+
+# ------------------------------------------------------------
+# 5. DOCUMENT LOADING
+# ------------------------------------------------------------
+# PDF
+pypdf
+pymupdf
+
+# DOCX
+python-docx
+
+# Excel
+openpyxl
+
+# PowerPoint
+python-pptx
+
+# HTML / Web pages
+beautifulsoup4
+lxml
+
+# Markdown
+markdown
+
+# Generic file-type detection
+filetype
+
+# ------------------------------------------------------------
+# 6. ADVANCED PDF / DOCUMENT PARSING
+# ------------------------------------------------------------
+# Complex document extraction
+unstructured
+unstructured-inference
+
+# Optional OCR support
+pytesseract
+
+# ------------------------------------------------------------
+# 7. TEXT CHUNKING / TOKENIZATION
+# ------------------------------------------------------------
+tiktoken
+tokenizers
+
+# ------------------------------------------------------------
+# 8. RETRIEVAL / SEARCH
+# ------------------------------------------------------------
+# BM25 / traditional keyword retrieval
+rank-bm25
+
+# Fast approximate nearest-neighbor search
+faiss-cpu
+
+# Scientific / numerical operations
+numpy
+scipy
+
+# ------------------------------------------------------------
+# 9. API / BACKEND
+# ------------------------------------------------------------
+fastapi
+uvicorn[standard]
+
+# Request validation / configuration
+pydantic
+pydantic-settings
+
+# Multipart file uploads
+python-multipart
+
+# ------------------------------------------------------------
+# 10. HTTP / ASYNC
+# ------------------------------------------------------------
+requests
+httpx
+aiohttp
+
+# ------------------------------------------------------------
+# 11. DATABASE / PERSISTENCE
+# ------------------------------------------------------------
+# SQL database abstraction
+sqlalchemy
+
+# PostgreSQL driver
+psycopg[binary]
+
+# Optional async PostgreSQL support
+asyncpg
+
+# ------------------------------------------------------------
+# 12. REDIS
+# ------------------------------------------------------------
+redis
+
+# ------------------------------------------------------------
+# 13. CONFIGURATION / ENVIRONMENT VARIABLES
+# ------------------------------------------------------------
+python-dotenv
+
+# ------------------------------------------------------------
+# 14. AUTHENTICATION / SECURITY
+# ------------------------------------------------------------
+PyJWT
+passlib[bcrypt]
+cryptography
+
+# ------------------------------------------------------------
+# 15. FRONTEND / DEMO UI
+# ------------------------------------------------------------
+# Optional Streamlit interface
+streamlit
+
+# ------------------------------------------------------------
+# 16. OBSERVABILITY / RAG EVALUATION
+# ------------------------------------------------------------
+# LangSmith tracing/evaluation
+langsmith
+
+# RAG evaluation
+ragas
+
+# Optional experiment tracking
+mlflow
+
+# ------------------------------------------------------------
+# 17. LOGGING
+# ------------------------------------------------------------
+loguru
+
+# ------------------------------------------------------------
+# 18. DATA PROCESSING
+# ------------------------------------------------------------
+pandas
+
+# ------------------------------------------------------------
+# 19. JUPYTER / DEVELOPMENT
+# ------------------------------------------------------------
+jupyter
+ipykernel
+
+# ------------------------------------------------------------
+# 20. TESTING
+# ------------------------------------------------------------
+pytest
+pytest-asyncio
+pytest-cov
+
+# ------------------------------------------------------------
+# 21. CODE QUALITY
+# ------------------------------------------------------------
+ruff
+black
+isort
+mypy
+
+# ------------------------------------------------------------
+# 22. TYPE / UTILITY PACKAGES
+# ------------------------------------------------------------
+typing-extensions
+tenacity
+
+# ------------------------------------------------------------
+# 23. OPTIONAL WEB SEARCH / RESEARCH
+# ------------------------------------------------------------
+duckduckgo-search
+trafilatura
+
+# ------------------------------------------------------------
+# 24. OPTIONAL AGENT / TOOLING
+# ------------------------------------------------------------
+langchain-openai
+mcp
